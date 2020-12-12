@@ -4,9 +4,34 @@ namespace _001Day
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            int num1, num2, opcao;
+            string resp;
+            Calculdadora c = new Calculdadora();
+
+            Console.WriteLine("*** Simples Calculdadora ***");
+            Console.WriteLine("Entre com dois numeros: ");
+            num1 = int.Parse(Console.ReadLine());
+            num2 = int.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine("1 - Adição\t2 - Subtração\t3 - Multiplicação\t4 - Divisão\nEscolha uma opção: ");
+                opcao = int.Parse(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                        c.Adicao(num1, num2);
+                        break;
+                    default:
+                        break;
+                }
+
+                Console.WriteLine("Você deseja fazer outra operação (yes/no): ");
+                resp = Console.ReadLine();
+            } while(resp == "yes" || resp == "YES");
         }
     }
 }
