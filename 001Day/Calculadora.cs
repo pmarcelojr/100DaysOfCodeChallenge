@@ -16,5 +16,9 @@ namespace _001Day
         {
             Console.WriteLine($"\nVocê escolheu Multiplicação => {a} * {b} = {a*b}");
         }
+        public void Divisao(int a, int b)
+        {
+            Console.WriteLine($"\nVocê escolheu Divisão => {a} / {b} = {a/b}");
+        }
     }
 }

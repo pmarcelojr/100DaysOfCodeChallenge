@@ -32,6 +32,9 @@ namespace _001Day
                     case 3:
                         c.Multiplicacao(num1, num2);
                         break;
+                    case 4:
+                        c.Divisao(num1, num2);
+                        break;
                     default:
                         break;
                 }
