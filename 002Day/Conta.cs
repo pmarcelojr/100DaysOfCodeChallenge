@@ -7,7 +7,7 @@ namespace _002Day
     {
         private string _nome;
         private double _saldo;
-        public int _numConta { get; private set; }
+        public int NumConta { get; private set; }
 
         public Conta(){
         }
@@ -15,13 +15,16 @@ namespace _002Day
         {
             this._nome = nome;
             this._saldo = saldo;
-            this._numConta = numConta;
+            this.NumConta = numConta;
         }
 
         public string Nome
         {
             get { return _nome; }
-            set { _nome = value; }
+            set { 
+                if(value != null && value.Length > 2)
+                    _nome = value; 
+            }
         }
         public double Saldo
         {
@@ -31,8 +34,8 @@ namespace _002Day
 
         public override string ToString()
         {
-            return "Conta " + _numConta + ", Titular: " + _nome + ", Saldo: R$ "
-                + _saldo.ToString("F2", CultureInfo.InvariantCulture);
+            return "Conta " + NumConta + ", Titular: " + Nome + ", Saldo: R$ "
+                + Saldo.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
