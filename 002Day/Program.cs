@@ -6,7 +6,8 @@ namespace _002Day
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Conta p = new Conta("marcelo", 500.00, 8282);
+            Console.WriteLine(p);
         }
     }
 }
