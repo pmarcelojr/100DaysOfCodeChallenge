@@ -7,7 +7,7 @@ namespace _002Day
     {
         static void Main(string[] args)
         {
-
+            string opcao, resp;
             Console.Clear();
             
             Console.Write("Entre com o número da conta: ");
@@ -25,7 +25,36 @@ namespace _002Day
             else
                 p.Saldo = 0.0;
             
-            Console.WriteLine($"\nDados da conta:\n{p}");
+            Console.Clear();
+            Console.WriteLine($"Dados da conta:\n{p}");
+
+            do
+            {
+                Console.WriteLine("\n1 - Depositar\t2 - Sacar\t3 - Sair\nEscolha uma opção: ");
+                opcao = Console.ReadLine();
+                if(opcao == "3")
+                {
+                    resp = "Não";
+                    break;
+                }
+                else
+                {
+                    switch (opcao)
+                    {
+                        case "1":
+                            Console.Write("Entre com um valor para depósito: ");
+                            break;
+                        case "2":
+                            Console.Write("Entre com um valor para saque: ");
+                            break;
+                        default:
+                            Console.Write("Opção Invalida!");
+                            break;
+                    }
+                    Console.Write("Deseja realizar outra operação (Sim/Não): ");
+                    resp = Console.ReadLine();
+                }
+            } while (resp == "Sim" || resp == "SIM" || resp == "sim" || resp == "s" || resp == "S");
 
         }
     }
