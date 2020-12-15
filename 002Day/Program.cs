@@ -21,10 +21,11 @@ namespace _002Day
             if(x == "s" || x == "S")
             {
                 Console.Write("Entre com um valor de depósito inicial: ");
-                p.Saldo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                dep = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                p.Depositar(dep);
             }
             else
-                p.Saldo = 0.0;
+                p.Depositar(0.0);
             
             Console.Clear();
             Console.WriteLine($"Dados da conta:\n{p}");

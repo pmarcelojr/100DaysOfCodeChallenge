@@ -6,7 +6,7 @@ namespace _002Day
     class Conta
     {
         private string _nome;
-        private double _saldo;
+        public double Saldo { get; private set; }
         public int NumConta { get; private set; }
 
         public Conta(){
@@ -14,7 +14,7 @@ namespace _002Day
         public Conta(string nome, double saldo, int numConta)
         {
             this._nome = nome;
-            this._saldo = saldo;
+            this.Saldo = saldo;
             this.NumConta = numConta;
         }
 
@@ -26,11 +26,11 @@ namespace _002Day
                     _nome = value; 
             }
         }
-        public double Saldo
-        {
-            get { return _saldo; }
-            set { _saldo = value; }
-        }
+        // public double Saldo
+        // {
+        //     get { return _saldo; }
+        //     set { _saldo = value; }
+        // }
 
         public double Depositar(double a)
         {
