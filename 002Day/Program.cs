@@ -28,11 +28,11 @@ namespace _002Day
                 p.Depositar(0.0);
             
             Console.Clear();
-            Console.WriteLine($"Dados da conta:\n{p}");
+            Console.WriteLine($"Dados da conta:\n{p}\n");
 
             do
             {
-                Console.WriteLine("\n1 - Depositar\t2 - Sacar\t3 - Atualizar Dados\t4 - Sair\nEscolha uma opção: ");
+                Console.WriteLine("1 - Depositar\t2 - Sacar\t3 - Atualizar Dados\t4 - Sair\nEscolha uma opção: ");
                 opcao = Console.ReadLine();
                 if(opcao == "4")
                 {
@@ -51,7 +51,11 @@ namespace _002Day
                             Console.WriteLine($"\nDados da Conta Atualizados:\n{p}");
                             break;
                         case "2":
+                            Console.Clear();
                             Console.Write("Entre com um valor para saque: ");
+                            dep = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                            p.Sacar(dep);
+                            Console.WriteLine($"\nDados da Conta Atualizados:\n{p}");
                             break;
                         case "3":
                             Console.Clear();
@@ -65,6 +69,7 @@ namespace _002Day
                     }
                     Console.Write("\nDeseja realizar outra operação (Sim/Não): ");
                     resp = Console.ReadLine();
+                    Console.Clear();
                 }
             } while (resp == "Sim" || resp == "SIM" || resp == "sim" || resp == "s" || resp == "S");
 

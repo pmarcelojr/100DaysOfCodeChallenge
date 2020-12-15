@@ -26,15 +26,14 @@ namespace _002Day
                     _nome = value; 
             }
         }
-        // public double Saldo
-        // {
-        //     get { return _saldo; }
-        //     set { _saldo = value; }
-        // }
 
         public double Depositar(double a)
         {
             return Saldo += a;
+        }
+        public double Sacar(double a)
+        {
+            return Saldo = (Saldo - a) - 5.00;
         }
 
         public override string ToString()
