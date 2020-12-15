@@ -14,7 +14,7 @@ namespace _002Day
         public Conta(string nome, double saldo, int numConta)
         {
             this._nome = nome;
-            this.Saldo = saldo;
+            Depositar(saldo);
             this.NumConta = numConta;
         }
 
