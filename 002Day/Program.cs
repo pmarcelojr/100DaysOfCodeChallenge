@@ -31,9 +31,9 @@ namespace _002Day
 
             do
             {
-                Console.WriteLine("\n1 - Depositar\t2 - Sacar\t3 - Sair\nEscolha uma opção: ");
+                Console.WriteLine("\n1 - Depositar\t2 - Sacar\t3 - Atualizar Dados\t4 - Sair\nEscolha uma opção: ");
                 opcao = Console.ReadLine();
-                if(opcao == "3")
+                if(opcao == "4")
                 {
                     resp = "Não";
                     break;
@@ -51,6 +51,12 @@ namespace _002Day
                             break;
                         case "2":
                             Console.Write("Entre com um valor para saque: ");
+                            break;
+                        case "3":
+                            Console.Clear();
+                            Console.Write($"O nome atual é {p.Nome}\nAtualize o nome do Titular da conta: ");
+                            p.Nome = Console.ReadLine();
+                            Console.Write($"O nome Atualizado é {p.Nome}");
                             break;
                         default:
                             Console.Write("Opção Invalida!");
