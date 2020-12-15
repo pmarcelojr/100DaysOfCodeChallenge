@@ -38,8 +38,7 @@ namespace _002Day
 
         public override string ToString()
         {
-            return "Conta " + NumConta + ", Titular: " + Nome + ", Saldo: R$ "
-                + Saldo.ToString("F2", CultureInfo.InvariantCulture);
+            return $"Conta: {NumConta}, Titular: {Nome}, Saldo: R${Saldo:F2}";
         }
     }
 }
