@@ -32,6 +32,11 @@ namespace _002Day
             set { _saldo = value; }
         }
 
+        public double Depositar(double a)
+        {
+            return Saldo += a;
+        }
+
         public override string ToString()
         {
             return "Conta " + NumConta + ", Titular: " + Nome + ", Saldo: R$ "

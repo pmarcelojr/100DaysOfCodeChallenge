@@ -8,6 +8,7 @@ namespace _002Day
         static void Main(string[] args)
         {
             string opcao, resp;
+            double dep;
             Console.Clear();
             
             Console.Write("Entre com o número da conta: ");
@@ -42,7 +43,11 @@ namespace _002Day
                     switch (opcao)
                     {
                         case "1":
+                            Console.Clear();
                             Console.Write("Entre com um valor para depósito: ");
+                            dep = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                            p.Depositar(dep);
+                            Console.WriteLine($"\nDados da Conta Atualizados:\n{p}");
                             break;
                         case "2":
                             Console.Write("Entre com um valor para saque: ");
@@ -51,7 +56,7 @@ namespace _002Day
                             Console.Write("Opção Invalida!");
                             break;
                     }
-                    Console.Write("Deseja realizar outra operação (Sim/Não): ");
+                    Console.Write("\nDeseja realizar outra operação (Sim/Não): ");
                     resp = Console.ReadLine();
                 }
             } while (resp == "Sim" || resp == "SIM" || resp == "sim" || resp == "s" || resp == "S");
