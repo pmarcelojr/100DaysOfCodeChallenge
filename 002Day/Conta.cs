@@ -8,6 +8,7 @@ namespace _002Day
         private string _nome;
         public double Saldo { get; private set; }
         public int NumConta { get; private set; }
+        private double _taxa = 5.00;
 
         public Conta(){
         }
@@ -33,7 +34,7 @@ namespace _002Day
         }
         public double Sacar(double a)
         {
-            return Saldo = (Saldo - a) - 5.00;
+            return Saldo = (Saldo - a) - _taxa;
         }
 
         public override string ToString()
