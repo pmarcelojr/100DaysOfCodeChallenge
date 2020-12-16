@@ -20,11 +20,13 @@ namespace _003Day
                 string nome = Console.ReadLine();
                 Console.Write("Email: ");
                 string email = Console.ReadLine();
+                if(!Validator.IsValidEmail(email))
+                    throw new InvalidOperationException("Entre com um email válido");
                 Console.Write("Quarto: ");
                 int quarto = int.Parse(Console.ReadLine());
                 vect[quarto] = new Rent(nome, email);
             }
-
+            
             Console.Clear();
             Console.WriteLine("Quartos Ocupados:");
             for(int i = 0; i < 10; i++)
