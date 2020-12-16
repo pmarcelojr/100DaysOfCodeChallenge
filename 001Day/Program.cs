@@ -41,7 +41,7 @@ namespace _001Day
 
                 Console.Write("Você deseja fazer outra operação (yes/no): ");
                 resp = Console.ReadLine();
-            } while(resp == "yes" || resp == "YES");
+            } while(resp == "yes" || resp == "YES" || resp == "y" || resp == "Y");
         }
     }
 }
