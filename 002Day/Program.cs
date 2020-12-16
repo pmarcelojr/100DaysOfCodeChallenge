@@ -52,10 +52,16 @@ namespace _002Day
                             break;
                         case "2":
                             Console.Clear();
-                            Console.Write("Entre com um valor para saque: ");
-                            dep = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                            p.Sacar(dep);
-                            Console.WriteLine($"\nDados da Conta Atualizados:\n{p}");
+                            Console.Write("É cobrado uma taxa de 5.00 para cada saque!\nDeseja continuar: (S/N)");
+                            char respSaque = char.Parse(Console.ReadLine());
+                                if(respSaque == 'S' || respSaque == 's')
+                                {
+                                    Console.Clear();
+                                    Console.Write("Entre com um valor para saque: ");
+                                    dep = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                                    p.Sacar(dep);
+                                    Console.WriteLine($"\nDados da Conta Atualizados:\n{p}");
+                                }
                             break;
                         case "3":
                             Console.Clear();
