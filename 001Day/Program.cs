@@ -18,6 +18,7 @@ namespace _001Day
 
             do
             {
+                Console.Clear();
                 Console.Write("1 - Adição\t2 - Subtração\t3 - Multiplicação\t4 - Divisão\nEscolha uma opção: ");
                 opcao = int.Parse(Console.ReadLine());
 
