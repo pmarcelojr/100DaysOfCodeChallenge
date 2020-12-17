@@ -26,6 +26,22 @@ namespace _005Day
             }
 
             Console.Clear();
+            Console.Write("Enter the employee id that will have salary increase: ");
+            int searchId = int.Parse(Console.ReadLine());
+
+            Employee emp = list.Find(x => x.Id == searchId);
+            if(emp != null)
+            {
+                Console.Write("Enter the percentage: ");
+                double percentage = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                emp.IncreaseSalary(percentage);
+            }
+            else
+            {
+                Console.WriteLine("This id does not exist!");
+            }
+
+            Console.Clear();
             Console.WriteLine("Updated list of Employee:");
             foreach(Employee obj in list)
             {
