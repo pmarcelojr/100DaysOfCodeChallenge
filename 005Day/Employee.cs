@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace _055Day
+namespace _005Day
 {
     class Employee
     {
