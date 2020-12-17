@@ -4,13 +4,22 @@ namespace _003Day
 {
     class Rent
     {
-        public string Nome { get; set; }
+        private string _nome; 
         public string Email { get; set; }
 
         public Rent(string nome, string email)
         {
-            this.Nome = nome;
-            this.Email = email;
+            _nome = nome;
+            Email = email;
+        }
+
+        public string Nome 
+        {
+            get { return _nome; }
+            set {
+                if(value != null && value.Length > 2)
+                    _nome = value;
+            }
         }
 
         public override string ToString()
