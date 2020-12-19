@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Collections.Generic;
 
 namespace _007Day.Entities
@@ -27,6 +28,23 @@ namespace _007Day.Entities
         public void RemoveComment(Comment comment)
         {
             Comments.Remove(comment);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(Title);
+            sb.Append(Likes);
+            sb.Append(" Likes - ");
+            sb.AppendLine(Moment.ToString("dd/MM/yyyy HH:mm:ss"));
+            sb.AppendLine(Content);
+            sb.AppendLine("Comments: ");
+            foreach(Comment c in Comments)
+            {
+                sb.AppendLine(c.Text);
+            }
+            return sb.ToString();
+
         }
     }
 }
