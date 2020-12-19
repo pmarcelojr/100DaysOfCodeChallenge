@@ -13,4 +13,7 @@ Aplicação Console App - Gerenciamento de Quartos de Hotel
 Manutenção nos codigos dos dias anteriores.
 
 ## Day 05
-Aplicação Console App = Lista de Funcionários
+Aplicação Console App - Lista de Funcionários
+
+## Day 06
+Aplicação Console App - Lista de Trabalhadores com Contratos
