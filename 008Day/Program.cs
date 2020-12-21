@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Net;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Linq;
 
 namespace _008Day
 {
@@ -21,19 +24,31 @@ namespace _008Day
 
             string url = $@"http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp?submeteu=sim&opcao=concurso&txtConcurso={numConcurso}";
             string html;
-
-            using (WebClient wc = new WebClient())
+            
+            using(WebClient webclient = new WebClient())
             {
-                wc.Headers["Cookie"] = "security=true";
-                html = wc.DownloadString(url);                
+                webclient.Headers["Cookie"] = "security=true";
+                html = webclient.DownloadString(url);
             }
 
-            // Retirando Span e formatando Output
-            html = html.Replace("<span class=\"num_sorteio\"><ul>", "");
-            html = html.Replace("<li>", "");   
+            // Retira Span e formata Output
+            html = html.Replace("<span class=\"num_sorteio\"><ul>", ""); 
+            //html = html.Replace("</ul></span>", ""); 
+            html = html.Replace("</li>", ""); 
 
-            Console.WriteLine(html);
+            string[] vet = Regex.Split(html, "<li>");
+            List<int> resultado = new List<int>();
 
+            resultado.Add(int.Parse(vet[1]));
+            resultado.Add(int.Parse(vet[2]));
+            resultado.Add(int.Parse(vet[3]));
+            resultado.Add(int.Parse(vet[4]));
+            resultado.Add(int.Parse(vet[5]));
+            resultado.Add(int.Parse(vet[6].Substring(0, 2)));
+
+            resultado.OrderBy(x => x).ToList().ForEach(num => {
+                Console.WriteLine(num);
+            });
         }
     }
 }
