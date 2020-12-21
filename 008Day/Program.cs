@@ -14,7 +14,7 @@ namespace _008Day
             Console.WriteLine("|   Seja Bem vindo ao Robô  *-*   |");
             Console.WriteLine("|     Resultado da Mega Sena      |");
             Console.WriteLine("|---------------------------------|");
-            Console.Write("Informe o número do concurso: ");
+            Console.Write("|Informe o número do concurso: ");
             string numConcurso = Console.ReadLine();
 
             if(string.IsNullOrWhiteSpace(numConcurso))
@@ -45,6 +45,9 @@ namespace _008Day
             resultado.Add(int.Parse(vet[4]));
             resultado.Add(int.Parse(vet[5]));
             resultado.Add(int.Parse(vet[6].Substring(0, 2)));
+
+            Console.WriteLine("|---------------------------------|");
+            Console.WriteLine($"|   Concurso selecionado:>  {numConcurso}  |");
 
             resultado.OrderBy(x => x).ToList().ForEach(num => {
                 Console.WriteLine(num);
