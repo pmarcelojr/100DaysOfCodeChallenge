@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace _008Day
 {
@@ -13,7 +14,21 @@ namespace _008Day
             Console.Write("Informe o número do concurso: ");
             string numConcurso = Console.ReadLine();
 
-            Console.WriteLine(numConcurso);
+            if(string.IsNullOrWhiteSpace(numConcurso))
+            {
+                numConcurso = "2329";
+            }
+
+            string url = $@"http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp?submeteu=sim&opcao=concurso&txtConcurso={numConcurso}";
+            string html;
+
+            using (WebClient wc = new WebClient())
+            {
+                wc.Headers["Cookie"] = "security=true";
+                html = wc.DownloadString(url);                
+            }
+
+            Console.WriteLine(html);
 
         }
     }
