@@ -50,8 +50,9 @@ namespace _008Day
             Console.WriteLine($"|   Concurso selecionado:>  {numConcurso}  |");
 
             resultado.OrderBy(x => x).ToList().ForEach(num => {
-                Console.WriteLine(num);
+                Console.WriteLine($"|--------->>>>>  {num}  <<<<<--------|");
             });
+            Console.WriteLine("|---------------------------------|");
         }
     }
 }
