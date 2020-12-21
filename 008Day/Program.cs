@@ -6,7 +6,10 @@ namespace _008Day
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Clear();
+            Console.WriteLine("Seja Bem vindo ao Robô *-*");
+            Console.Write("--------------------------");
+
         }
     }
 }
