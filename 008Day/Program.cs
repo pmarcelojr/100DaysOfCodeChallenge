@@ -28,6 +28,10 @@ namespace _008Day
                 html = wc.DownloadString(url);                
             }
 
+            // Retirando Span e formatando Output
+            html = html.Replace("<span class=\"num_sorteio\"><ul>", "");
+            html = html.Replace("<li>", "");   
+
             Console.WriteLine(html);
 
         }
