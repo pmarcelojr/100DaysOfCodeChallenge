@@ -57,7 +57,7 @@ namespace Funcoes
             int nDezenas, nApostas;
             string inseridos, valor;
             Random dezena = new Random();
-            Console.WriteLine("|***Gerador aleatório de Apostas***|");
+            Console.WriteLine("\n|***Gerador aleatório de Apostas***|");
             Console.Write("|  Insira o número de Apostas: ");
             nApostas = int.Parse(Console.ReadLine());
             Console.Write("|   Insira dezenas por aposta: ");
