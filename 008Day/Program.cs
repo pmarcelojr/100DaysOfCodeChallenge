@@ -3,6 +3,7 @@ using System.Net;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
+using Tela;
 
 namespace _008Day
 {
@@ -11,9 +12,7 @@ namespace _008Day
         static void Main(string[] args)
         {
             Console.Clear();
-            Console.WriteLine("|    Seja Bem vindo ao Robô  *-*   |");
-            Console.WriteLine("|      Resultado da Mega Sena      |");
-            Console.WriteLine("|----------------------------------|");
+            Menu.Criar();
             Console.Write("|Informe o número do concurso: ");
             string numConcurso = Console.ReadLine();
 
