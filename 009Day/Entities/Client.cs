@@ -6,16 +6,16 @@ namespace _009Day.Entities
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime BirthDate { get; set; }
 
         public Client()
         {
         }
-        public Client(string name, string email, DateTime date)
+        public Client(string name, string email, DateTime birthDate)
         {
             Name = name;
             Email = email;
-            Date = date;
+            BirthDate = birthDate;
         }
     }
 }
