@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Collections.Generic;
 using _009Day.Entities.Enums;
 
@@ -35,6 +36,17 @@ namespace _009Day.Entities
                 sum += item.SubTotal();
             }
             return sum;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("ORDER SUMMARY:");
+            sb.AppendLine($"Order Moment: {Moment.ToString()}");
+            sb.AppendLine($"Order Status: {Status.ToString()}");
+            sb.AppendLine($"Client: {Client.Name} ({Client.BirthDate.ToString("dd/MM/yyyy")}) - {Client.Email}");
+            sb.AppendLine("Order Items:");
+            return sb.ToString();
         }
     }
 }
