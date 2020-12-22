@@ -20,3 +20,6 @@ Aplicação Console App - Lista de Trabalhadores com Contratos
 
 ## Day 07
 Aplicação Console App - Postagem e comentários utilizando Composição
+
+## Day 08
+Aplicação Console App - Robô para Obter número do sorteio da Mega Sena
