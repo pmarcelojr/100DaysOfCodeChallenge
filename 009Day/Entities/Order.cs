@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using System.Globalization;
 using System.Collections.Generic;
 using _009Day.Entities.Enums;
 
@@ -30,7 +31,7 @@ namespace _009Day.Entities
         }
         public double Total()
         {
-            double sum = 0;
+            double sum = 0.0;
             foreach(OrderItem item in Items)
             {
                 sum += item.SubTotal();
@@ -46,6 +47,11 @@ namespace _009Day.Entities
             sb.AppendLine($"Order Status: {Status.ToString()}");
             sb.AppendLine($"Client: {Client.Name} ({Client.BirthDate.ToString("dd/MM/yyyy")}) - {Client.Email}");
             sb.AppendLine("Order Items:");
+            foreach(OrderItem item in Items)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine($"Total Price: ${Total().ToString("f2", CultureInfo.InvariantCulture)}");
             return sb.ToString();
         }
     }
