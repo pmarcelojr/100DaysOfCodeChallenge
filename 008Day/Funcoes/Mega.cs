@@ -51,5 +51,35 @@ namespace Funcoes
             });
             Console.WriteLine("|----------------------------------|");
         }
+    
+        public static void Gerador()
+        {
+            int nDezenas, nApostas;
+            string inseridos, valor;
+            Random dezena = new Random();
+            Console.WriteLine("|***Gerador aleatório de Apostas***|");
+            Console.Write("|  Insira o número de Apostas: ");
+            nApostas = int.Parse(Console.ReadLine());
+            Console.Write("|   Insira dezenas por aposta: ");
+            nDezenas = int.Parse(Console.ReadLine());
+            
+            for(int i = 0; i < nApostas; i++)
+            {
+                inseridos = "";
+                
+                Console.WriteLine($"|************ Aposta {i + 1} ************|");
+                for(int j = 0; j < nDezenas; j++)
+                {
+                    valor = dezena.Next(1, 60).ToString();
+                    if(!inseridos.Contains(valor))
+                    {
+                        inseridos += valor + ",";
+                        Console.Write($"  {valor.ToString()}  ");
+                    }
+                    else j--;
+                }
+                Console.WriteLine($"\n|**********************************|");
+            }
+        }
     }
 }

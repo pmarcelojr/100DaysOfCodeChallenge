@@ -7,6 +7,7 @@ namespace Tela
     {
         public const int SAIDA_PROGRAMA = 0;
         public const int RESULTADO_MEGA = 1;
+        public const int GERADOR_MEGA = 2;
         public static void Criar()
         {
             Console.WriteLine("|    Seja Bem vindo ao Robô  *-*   |");
@@ -29,6 +30,10 @@ namespace Tela
                 else if (valor == RESULTADO_MEGA)
                 {
                     Mega.Resultado();
+                }
+                else if (valor == GERADOR_MEGA)
+                {
+                    Mega.Gerador();
                 }
                 else
                 {
