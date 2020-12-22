@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace _009Day.Entities
 {
     class OrderItem
@@ -17,6 +19,14 @@ namespace _009Day.Entities
         public double SubTotal()
         {
             return Quantity * Price;
+        }
+
+        public override string ToString()
+        {
+            return Product.Name + ", $"
+                + Price.ToString("f2", CultureInfo.InvariantCulture)
+                + ", Quantity: " + Quantity + ", Subtotal: $"
+                + SubTotal().ToString("f2", CultureInfo.InvariantCulture);
         }
     }
 }
