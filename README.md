@@ -26,3 +26,6 @@ Aplicação Console App - Robô para Obter número do sorteio da Mega Sena
 
 ## Day 09
 Aplicação Console App - Sistema de Order e product com OrderStatus
+
+## Day 10
+Aplicação Console App - Sistema Sorteio sem repetir números [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/SorteioSemRepetir)
