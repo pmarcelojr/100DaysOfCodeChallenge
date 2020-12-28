@@ -28,4 +28,7 @@ Aplicação Console App - Robô para Obter número do sorteio da Mega Sena
 Aplicação Console App - Sistema de Order e product com OrderStatus
 
 ## Day 10
-Aplicação Console App - Sistema Sorteio sem repetir números [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/SorteioSemRepetir)
+Aplicação Console App - Sistema Sorteio sem repetir números -> [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/SorteioSemRepetir)
+
+## Day 11
+Aplicação Console App - Sistema GradeBook (Plural Sight) -> [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/gradebook)
