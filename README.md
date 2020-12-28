@@ -32,3 +32,6 @@ Aplicação Console App - Sistema Sorteio sem repetir números -> [Link](https:/
 
 ## Day 11
 Aplicação Console App - Sistema GradeBook (Plural Sight) -> [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/gradebook)
+
+## Day 12
+Aplicação - Projeto Clean Architecture AwesomeGym -> [Link](https://github.com/pmarcelojr/AwesomeGym)
