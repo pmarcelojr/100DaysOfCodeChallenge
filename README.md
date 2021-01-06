@@ -35,3 +35,6 @@ Aplicação Console App - Sistema GradeBook (Plural Sight) -> [Link](https://git
 
 ## Day 12
 Aplicação - Projeto Clean Architecture AwesomeGym -> [Link](https://github.com/pmarcelojr/AwesomeGym)
+
+## Day 13
+Aplicação Console App - Sistema Funcionários e Terceiros
