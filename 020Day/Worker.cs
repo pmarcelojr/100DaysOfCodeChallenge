@@ -31,6 +31,21 @@ namespace _020Day
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+
+                foreach (var path in _folderPaths)
+                {
+                    if (!stoppingToken.IsCancellationRequested)
+                    {
+                        // Get old files
+                        var files = Directory.GetFiles(path).Select
+                                    (file => new FileInfo(file)).Where
+                                    (file => file.LastWriteTime < DateTime.Now.AddDays
+                                             (-1* _numberOfDaysBeforeDelete)).ToList();
+
+                        // Delete found files
+                        files.ForEach(file => file.Delete());
+                    }
+                }
                 await Task.Delay(1000, stoppingToken);
             }
         }
