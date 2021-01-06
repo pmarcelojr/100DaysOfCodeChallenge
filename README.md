@@ -38,3 +38,6 @@ Aplicação - Projeto Clean Architecture AwesomeGym -> [Link](https://github.com
 
 ## Day 13
 Aplicação Console App - Sistema Funcionários e Terceiros
+
+## Day 20
+Aplicação Worker Service - FolderCleanUpService -> [Link Tutorial](https://www.codeproject.com/Articles/5263939/Build-a-Windows-Worker-Service-Using-NET-Core-3-1)
