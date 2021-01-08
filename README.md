@@ -41,3 +41,6 @@ Aplicação Console App - Sistema Funcionários e Terceiros
 
 ## Day 20
 Aplicação Worker Service - FolderCleanUpService -> [Link Tutorial](https://www.codeproject.com/Articles/5263939/Build-a-Windows-Worker-Service-Using-NET-Core-3-1)
+
+## Day 21
+Aplicação Console App - Jogo de Xadrez -> [Link](https://github.com/pmarcelojr/xadrez-console)
