@@ -44,3 +44,6 @@ Aplicação Worker Service - FolderCleanUpService -> [Link Tutorial](https://www
 
 ## Day 21
 Aplicação Console App - Jogo de Xadrez -> [Link](https://github.com/pmarcelojr/xadrez-console)
+
+## Day 22
+Aplicação Console App - Manipulação de Arquivos com namespace <i>System.IO</i>
