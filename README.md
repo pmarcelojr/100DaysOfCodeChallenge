@@ -47,3 +47,9 @@ Aplicação Console App - Jogo de Xadrez -> [Link](https://github.com/pmarcelojr
 
 ## Day 22
 Aplicação Console App - Manipulação de Arquivos com namespace <i>System.IO</i>
+
+## Day 23
+Estudos Banco de Dados - Criando modelo Conceitual, Lógico e Físico [Link Curso](https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado/)
+
+## Day 24
+Aplicação Console App - Sistema de Alugueis de Carros utilizando Interfaces [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/Interfaces)
