@@ -53,3 +53,6 @@ Estudos Banco de Dados - Criando modelo Conceitual, Lógico e Físico [Link Curs
 
 ## Day 24
 Aplicação Console App - Sistema de Alugueis de Carros utilizando Interfaces [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/Interfaces)
+
+## Day 25
+Aplicação Console App - Sistema simples de Pagamento PayPal utilizando Interfaces
