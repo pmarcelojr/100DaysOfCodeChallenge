@@ -54,6 +54,9 @@ Aplicação Console App - Continuação do projeto Jogo de Xadrez
 ## Day 18
 Aplicação Console App - Continuação do projeto Jogo de Xadrez
 
+## Day 19
+Revisão do projeto Jogo de Xadrez e estudos de Excel/VBA
+
 ## Day 20
 Aplicação Worker Service - FolderCleanUpService -> [Link Tutorial](https://www.codeproject.com/Articles/5263939/Build-a-Windows-Worker-Service-Using-NET-Core-3-1)
 
