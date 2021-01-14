@@ -77,3 +77,6 @@ Aplicação Console App - Sistema simples de Pagamento PayPal utilizando Interfa
 
 ## Day 26
 Aplicação Windows Forms - Sistema para realizar extração de dados da web (Web Scraping com C#)
+
+## Day 27
+Estudos Banco de Dados - Inner Join / Views / Order By (DML/DDL)
