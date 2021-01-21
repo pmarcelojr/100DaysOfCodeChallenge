@@ -79,7 +79,7 @@ Aplicação Console App - Sistema simples de Pagamento PayPal utilizando Interfa
 Aplicação Windows Forms - Sistema para realizar extração de dados da web (Web Scraping com C#)
 
 ## Day 27
-Estudos Banco de Dados - Inner Join / Views / Order By (DML/DDL)
+Estudos Banco de Dados - Inner Join / Views / Order By (DML/DDL) [Link](https://github.com/pmarcelojr/100DaysOfCodeChallenge/tree/main/Estudos_BD)
 
 ## Day 28
 Estudos C# Completo - Generics / GetHashCode / Equals / HashSet / SortedSet [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/generics)
@@ -91,4 +91,4 @@ Estudos C# Completo - Dictionary / SortedDictionary / Extensions Method [Link](h
 Estudos C# Completo - Bases do .NET Framework
 
 ## Day 31
-Estudos Banco de Dados - Funções Agregação numéricas / Operações Aritméticas / Constraints nomeadas / Dicionario de dados
+Estudos Banco de Dados - Funções Agregação numéricas / Operações Aritméticas / Constraints nomeadas / Dicionario de dados [Link](https://github.com/pmarcelojr/100DaysOfCodeChallenge/tree/main/Estudos_BD)
