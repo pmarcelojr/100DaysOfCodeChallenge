@@ -82,10 +82,10 @@ Aplicação Windows Forms - Sistema para realizar extração de dados da web (We
 Estudos Banco de Dados - Inner Join / Views / Order By (DML/DDL)
 
 ## Day 28
-Estudos C# Completo - Generics / GetHashCode / Equals / HashSet / SortedSet
+Estudos C# Completo - Generics / GetHashCode / Equals / HashSet / SortedSet [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/generics)
 
 ## Day 29
-Estudos C# Completo - Dictionary / SortedDictionary / Extensions Method
+Estudos C# Completo - Dictionary / SortedDictionary / Extensions Method [Link](https://github.com/pmarcelojr/csharp-POO/tree/main/ExerciciosGerais/generics)
 
 ## Day 30
 Estudos C# Completo - Bases do .NET Framework
