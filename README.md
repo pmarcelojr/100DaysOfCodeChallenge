@@ -80,3 +80,6 @@ Aplicação Windows Forms - Sistema para realizar extração de dados da web (We
 
 ## Day 27
 Estudos Banco de Dados - Inner Join / Views / Order By (DML/DDL)
+
+## Day 28
+Estudos C# Completo - Generics / GetHashCode / Equals / HashSet / SortedSet
