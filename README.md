@@ -89,3 +89,6 @@ Estudos C# Completo - Dictionary / SortedDictionary / Extensions Method
 
 ## Day 30
 Estudos C# Completo - Bases do .NET Framework
+
+## Day 31
+Estudos Banco de Dados - Funções Agregação numéricas / Operações Aritméticas / Constraints nomeadas / Dicionario de dados
