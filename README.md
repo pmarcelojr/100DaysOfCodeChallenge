@@ -86,3 +86,6 @@ Estudos C# Completo - Generics / GetHashCode / Equals / HashSet / SortedSet
 
 ## Day 29
 Estudos C# Completo - Dictionary / SortedDictionary / Extensions Method
+
+## Day 30
+Estudos C# Completo - Bases do .NET Framework
