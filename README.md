@@ -83,3 +83,6 @@ Estudos Banco de Dados - Inner Join / Views / Order By (DML/DDL)
 
 ## Day 28
 Estudos C# Completo - Generics / GetHashCode / Equals / HashSet / SortedSet
+
+## Day 29
+Estudos C# Completo - Dictionary / SortedDictionary / Extensions Method
